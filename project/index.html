@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BiteBook - Delicious Recipes</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>BiteBook</h1>
+        <p class="tagline">Recipes that feel like home</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#" id="discord-link">Join Our Discord</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Discover Delicious Homemade Recipes</h2>
+        <p>Find your next favorite meal with our carefully curated recipes</p>
+      </div>
+    </section>
+
+    <section class="recipes">
+      <div class="container">
+        <h2>Our Recipes</h2>
+        <div class="recipe-grid" id="recipe-grid">
+          <!-- Recipe cards will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 BiteBook. All rights reserved.</p>
+      <p>Made with 💛 for food lovers</p>
+    </div>
+  </footer>
+
+  <!-- Discord Modal -->
+  <div class="modal" id="discord-modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Join Our Discord Community</h2>
+      <p>Connect with other food enthusiasts, share your cooking experiences, and get help with recipes!</p>
+      <a href="https://discord.gg/bitebook" class="button" target="_blank">Join Discord</a>
+    </div>
+  </div>
+
+  <script src="js/recipes.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/modal.js"></script>
+</body>
+</html>
